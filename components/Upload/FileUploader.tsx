@@ -1,37 +1,29 @@
 'use client';
 
-import styles from './Upload.module.css';
+import { MdCloudUpload } from 'react-icons/md';
 
 interface FileUploaderProps {
     label: string;
     required?: boolean;
 }
 
-const UploadIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-        <polyline points="17 8 12 3 7 8"></polyline>
-        <line x1="12" y1="3" x2="12" y2="15"></line>
-    </svg>
-);
-
 export default function FileUploader({ label, required = false }: FileUploaderProps) {
     return (
         <div>
-            <h3 className={styles.uploadSectionTitle}>
+            <h3 className="text-base font-semibold text-slate-800 mb-2">
                 {label}
-                {required && <span className={styles.required}>*</span>}
+                {required && <span className="text-red-500 ml-1">*</span>}
             </h3>
 
-            <div className={styles.dropzone}>
-                <div className={styles.uploadIcon}>
-                    <UploadIcon />
+            <div className="border-2 border-dashed border-gray-300 rounded-lg py-12 px-8 text-center bg-gray-50 transition-all duration-200 cursor-pointer hover:border-[#00c6ff] hover:bg-blue-50 mb-8">
+                <div className="text-[#00c6ff] mb-4 flex justify-center">
+                    <MdCloudUpload size={32} />
                 </div>
-                <div className={styles.uploadTextMain}>Choose a File to Upload</div>
-                <div className={styles.uploadTextSub}>
+                <div className="font-semibold text-gray-700 mb-2">Choose a File to Upload</div>
+                <div className="text-sm text-gray-500 mb-6">
                     Drag and drop your file here, or click the button below to browse from your device.
                 </div>
-                <button className={styles.selectFileButton}>
+                <button className="bg-white border border-gray-300 py-2 px-6 rounded-md font-medium text-gray-700 transition-all hover:bg-gray-100 hover:border-gray-400">
                     Select File
                 </button>
             </div>
