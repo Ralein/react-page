@@ -52,7 +52,7 @@ export default function PlanDetailsPage() {
         >
           Proceed
         </Link>
-        <button className="flex-1 bg-white border border-gray-300 text-slate-700 py-3 rounded-md font-medium text-center hover:bg-gray-50 transition-colors border-[#000000] border-[2px]">
+        <button className="flex-1 bg-white text-slate-700 py-3 rounded-md font-medium text-center hover:bg-gray-50 transition-colors border border-gray-300">
           Cancel
         </button>
       </div>
