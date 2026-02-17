@@ -1,0 +1,123 @@
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.supportedFormats {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #d9534f;
+    /* Reddish for the alert icon */
+    font-weight: 500;
+}
+
+.formatInfo {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.uploadSectionTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a3b5d;
+    margin-bottom: 0.5rem;
+}
+
+.required {
+    color: #d9534f;
+    margin-left: 0.25rem;
+}
+
+.dropzone {
+    border: 2px dashed #d1d5db;
+    border-radius: var(--radius-md);
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9fafb;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.dropzone:hover {
+    border-color: #00c6ff;
+    background-color: #f0f9ff;
+}
+
+.uploadIcon {
+    color: #00c6ff;
+    margin-bottom: 1rem;
+}
+
+.uploadTextMain {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.uploadTextSub {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.selectFileButton {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    color: #374151;
+    transition: all 0.2s;
+}
+
+.selectFileButton:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+/* Footer Buttons - Reused style concept */
+.footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.proceedButton {
+    flex: 1;
+    background: linear-gradient(90deg, #00c6ff 0%, #004e92 100%);
+    color: white;
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelButton {
+    flex: 1;
+    background: white;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+.container {
+    max-width: 800px;
+    margin: 4rem auto;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.iconContainer {
+    margin-bottom: 1.5rem;
+    color: #00c853;
+    /* Green from the image */
+    display: flex;
+    justify-content: center;
+}
+
+.thankYouText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a3b5d;
+    margin-bottom: 2rem;
+}
+
+.messageContent {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.quotationId {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.messageBody {
+    color: #555;
+    line-height: 1.6;
+}
