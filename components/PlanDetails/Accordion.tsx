@@ -14,7 +14,7 @@ export default function Accordion({ title, children, defaultOpen = false, icon }
     const [isOpen, setIsOpen] = useState(defaultOpen);
 
     return (
-        <div className="border-b border-gray-200">
+        <div className="border-b border-gray-200 ">
             <div
                 className="flex justify-between items-center py-4 cursor-pointer font-medium text-slate-800"
                 onClick={() => setIsOpen(!isOpen)}
