@@ -7,7 +7,7 @@ import PlanSummary from '../components/PlanDetails/PlanSummary';
 
 export default function PlanDetailsPage() {
   return (
-    <div className="max-w-5xl mx-auto my-8 bg-white rounded-xl shadow-md p-8">
+    <div className="max-w-6xl mx-auto my-8 bg-white rounded-xl shadow-md p-8">
       <PlanSummary />
 
       <h3 className="text-base font-semibold text-slate-800 mt-6 mb-2">Additional Coverage Details</h3>

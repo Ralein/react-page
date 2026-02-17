@@ -6,7 +6,7 @@ import FileUploader from '../../components/Upload/FileUploader';
 
 export default function UploadPage() {
     return (
-        <div className="max-w-4xl mx-auto my-8 bg-white rounded-xl shadow-md p-8">
+        <div className="max-w-6xl mx-auto my-8 bg-white rounded-xl shadow-md p-8">
             <div className="flex justify-between items-center mb-8 pb-4 border-b border-gray-200">
                 <div className="flex items-center gap-2 text-red-500 font-medium">
                     <MdErrorOutline size={20} />
@@ -25,11 +25,11 @@ export default function UploadPage() {
             <div className="flex gap-4 mt-8">
                 <Link
                     href="/thank-you"
-                    className="flex-1 bg-gradient-to-r from-[#00c6ff] to-[#004e92] text-white py-3 rounded-md font-semibold text-center flex justify-center items-center hover:shadow-lg transition-shadow"
+                    className="flex-1 bg-gradient-to-r from-[#00c6ff] to-[#000000] text-white py-3 rounded-md font-semibold text-center flex justify-center items-center hover:shadow-lg transition-shadow border-[#000000] border-[2px]"
                 >
                     Proceed
                 </Link>
-                <button className="flex-1 bg-white border border-gray-300 text-slate-700 py-3 rounded-md font-medium text-center hover:bg-gray-50 transition-colors">
+                <button className="flex-1 bg-white border border-gray-300 text-slate-700 py-3 rounded-md font-medium text-center hover:bg-gray-50 transition-colors border-[#000000] border-[2px]">
                     Back
                 </button>
             </div>

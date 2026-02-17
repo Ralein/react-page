@@ -4,7 +4,7 @@ import { HiBadgeCheck } from "react-icons/hi";
 
 export default function SuccessMessage() {
     return (
-        <div className="max-w-5xl mx-auto my-16 bg-white rounded-xl shadow-sm border border-gray-100 p-8 flex items-start gap-8 justify-center">
+        <div className="max-w-4xl mx-auto my-16 bg-white rounded-xl shadow-sm border border-gray-100 p-8 flex items-start gap-8 justify-center">
             <div className="flex flex-col items-center min-w-[100px] pt-1">
                 <div className="text-[#58a77e] mb-2">
                     <HiBadgeCheck size={100} />

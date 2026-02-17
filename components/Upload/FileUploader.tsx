@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { MdCloudUpload, MdCheckCircle, MdDelete } from 'react-icons/md';
+import { MdOutlineFileUpload, MdCheckCircle, MdDelete } from 'react-icons/md';
 
 interface FileUploaderProps {
     label: string;
@@ -79,13 +79,13 @@ export default function FileUploader({ label, required = false }: FileUploaderPr
                 ) : (
                     <>
                         <div className="text-[#00c6ff] mb-3 flex justify-center">
-                            <MdCloudUpload size={40} />
+                            <MdOutlineFileUpload size={40} />
                         </div>
                         <div className="font-semibold text-slate-700 mb-2">Choose a File to Upload</div>
                         <div className="text-xs text-gray-500 mb-6 max-w-[250px] mx-auto leading-relaxed">
                             Drag and drop your file here, or click the button below to browse from your device.
                         </div>
-                        <button className="bg-white border border-gray-200 py-2 px-6 rounded text-sm font-medium text-slate-600 shadow-sm transition-all hover:bg-gray-50 hover:border-gray-300 hover:text-slate-800 uppercase tracking-wide">
+                        <button className="bg-white border border-gray-200 py-2 px-6 rounded text-sm font-medium text-slate-600 shadow-[0_4px_0_0_#e2e8f0] transition-all hover:bg-gray-50 hover:border-gray-300 hover:text-slate-800 active:translate-y-[2px] active:shadow-none uppercase tracking-wide">
                             Select File
                         </button>
                     </>
